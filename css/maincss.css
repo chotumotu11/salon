@@ -1,15 +1,31 @@
 
 @media (max-width: 767px){
 
-  .spacewithrock{
+  form.form-inline{
+    padding: 25px 0px;
+  }
+
+  .navbar-toggle{
+    border: 0;
+  }
+
+  .nopadding-left{
+    margin-top: 10px;
+  }
+
+   div.navbar-collapse.blackbackground{
+    background-color: black;
+   }
+
+  .specialspaservices>p:nth-child(3){
     padding-top: 20px;
   }
 
-  main>img.fullwidth{
+  body>img.fullwidth{
     margin-bottom: 25px;
   }
 
-  img.pullleft{
+  img.float-sm-left{
     display: block;
     margin: 0 auto;
   }
@@ -24,94 +40,55 @@
     padding-top: 10px;
   }
 
-  .navbar-header{
-    padding-bottom: 10px;
+  .blackbackground ul.nopadding-left li a:link,.blackbackground ul.nopadding-left li a:visited{
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+  }
+
+  .blackbackground ul.nopadding-left{
+    padding: 2px 0;
+  }
+  .blackbackground ul.nopadding-left li{
+    padding: 0px 0;
+    text-align: center;
+  }
+
+  .blackbackground ul.nopadding-left li>a{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: block;
   }
   /*Converts the form into an Inline element and the width is given using a relative sizing so that the spacing matches with the desging provided in mobile mode */
-  .form-group .makeinline{
+  .form-inline .makeinline{
     display: inline-block;
     width: 73%;
   }
-  /*Makes the form aling center and the links in the navbar also get aligned center in the mobile mode ofcourse */
-  .navbar .form-group,.navbar .nav-stacked {
-    text-align: center;
-  }
-  /*used to give proper padding to the the copyright text in the footer in the mobile view.
-  .makefooter>span.pullleft{
-    padding-left: 10%;
-    padding-right: 10%;
 
-  }
-  */
-  .navbar-collapse .navbar-form{
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /*Fixes the vertical space alignment in the navbar in mobile view. */
-  .navbar .container .nav {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-
-  .navbar a:link{
-    color: white;
-    background-color: black;
-  }
-  .navbar .container .nav li a:hover{
-    color: #df1750;
-    border-radius: 0px;
-  }
-
-      /*
-     .navbar .container .nav li a:active{
-    	color: #df1750;
-     }
-     */
-
-  .navbar a:visited{
-    color:white;
-  }
-
-  .navbar .nav.nav-pills li>a:focus{
-    color: white;
-    background-color: black;
-  }
-
-  .nav-pills>li.on>a:hover , .nav-pills>li.on>a:focus, .nav-pills>li.on>a{
+  
+  .blackbackground ul.nopadding-left li a:hover,.blackbackground ul.nopadding-left li a:focus{
     background-color: white;
+    display: block;
     color: #df1750;
-    border-radius: 0px;
+    text-decoration: none;
+  }
+
+  .blackbackground ul.nopadding-left li.on a{
+    background-color: white;
+    display: block;
+    color: #df1750;
   }
 
 }
 
-/*Makes the navbar background color into black */
-.navbar .container .nav,nav.blackbackground{
-  background: black;
-}
 
-/* Removes the navbar  border and its radius  */
-nav.blackbackground {
-  border-radius: 0;
-  border: none;
-}
-
-/*This is used in the main header which also serves as the navbar during mobile view. It gives a top spacing of 15 pixels and a background color of pure white .*/
-.nopadding{
-  padding-top: 15px;
-  background-color: white;
-}
 
 /*Turns all the image into full width. This leads to them acting responsively in this case. */
 .fullwidth{
   width: 100%;
 }
 
-/*By default all navbars have a bottom margin . This removes that where required.s */
-.navbar{
-  margin-bottom: 0;
-}
 
 /*This is responsbile for the looks of the welcome ,about us, and the services box . */
 .shadowandoverlap{
@@ -138,21 +115,32 @@ nav.blackbackground {
 /*These apply to the webpage in non mobile mode. */
 @media (min-width: 768px){
 
-  footer.makefooter>ul>li{
+  .float-sm-left{
+    float: left;
+  }
+
+  form.form-inline{
+    padding-top: 5px;
+  }
+
+  div.navbar-collapse.blackbackground{
+    background-color:black;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  .navbar-collapse ul>li{
     display: inline;
   }
 
-
-  span.pullleft{
+  span.float-sm-left{
     padding-left: 5px;
   }
-  .spacewithrock{
+  .specialspaservices>p{
     padding-left: 200px;
   }
 
-  form.navbar-form.makeright {
-    padding-right: 0;
-  }
+
   .makeright{
     float: right;
   }
@@ -165,9 +153,6 @@ nav.blackbackground {
   	color: white;
   }
 
-  footer.makefooter>ul{
-    text-align: right;
-  }
   .shadowandoverlap{
   	margin-top: -26%;
   	background-color: white;
@@ -176,32 +161,25 @@ nav.blackbackground {
     clear: both;
   }
 
-  footer.makefooter>ul{
-    float: right;
-  }
-  .pullleft{
-    float: left;
-  }
   footer.makefooter>ul>li{
     padding-right: 1vw;
+    display: inline;
   }
   footer.makefooter>ul{
     width: 50%;
+    text-align: right;
+    float: right;
   }
 
-  .navbar > .container-fluid .navbar-brand{
-    margin-left: 0;
-  }
-  .navbar-form .form-control{
+
+  .form-inline .form-control{
     width: 300px;
   }
   .spaheader{
     margin-bottom: 35px;
   }
    /*Fixes the vertical space alignment in the navbar in desktop view. */
-  .navbar .container .nav {
-    padding-top: 5px;
-  }
+
 }
 
 footer.makefooter{
@@ -214,22 +192,6 @@ footer.makefooter{
   margin-top: 30px;
 }
 
-footer{
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.clearfix{
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
 
 
 footer a:link,a:hover,a:active,a:visited{
@@ -237,17 +199,8 @@ footer a:link,a:hover,a:active,a:visited{
   text-decoration: none;
 }
 
-.rightalign .btn{
-  background-color:#bf0c3b;
-  padding: 0 10px;
-  border-radius: 0;
-  color: white;
-  border: 0px;
-}
-.navbar-collapse{
-  padding-right: 0;
-  padding-left: 0;
-}
+
+
 
 .form-control:focus,.form-control{
   border-color: #df1750;
@@ -255,7 +208,8 @@ footer a:link,a:hover,a:active,a:visited{
   border-radius: 0;
   border-width: 2px;
 }
-.navbar-form .form-group .btn {
+
+.form-inline .btn {
   background-color: #df1750;
   border-radius: 0;
   padding-left: 20px;
@@ -263,18 +217,20 @@ footer a:link,a:hover,a:active,a:visited{
   color: white;
 }
 
-.navbar-brand .pinktext {
+ .navbar-default div.navbar-header a:link,.navbar-default div.navbar-header a:visited,.navbar-default div.navbar-header a:focus,.navbar-default div.navbar-header a:hover{
   font-family: 'Great Vibes', cursive;
   font-size: 2em;
+  color: #df1750;
+  background-color:white;
 }
 
-footer.makefooter>ul , .makefooter>span.pullleft{
+footer.makefooter>ul , .makefooter>span.float-sm-left{
   padding-top: 18px;
   padding-bottom: 18px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .makefooter>span.pullleft , footer.makefooter>ul{
+  .makefooter>span.float-sm-left , footer.makefooter>ul{
     font-size: 12px;
   }
   .nav > li > a{
@@ -283,9 +239,6 @@ footer.makefooter>ul , .makefooter>span.pullleft{
   }
 }
 
-.navbar-default .navbar-toggle{
-  border: none;
-}
 
 
 @media (min-width: 992px) and (max-width: 1199px){
@@ -295,6 +248,7 @@ footer.makefooter>ul , .makefooter>span.pullleft{
 }
 
 @media (max-width: 767px){
+
   .shadowandoverlap{
     margin-top: 25px;
   }
@@ -309,13 +263,8 @@ footer.makefooter>ul , .makefooter>span.pullleft{
     padding-right: 20px;
   }
   /*Matches the spacing in the navigation bar in mobile mode. The nav buttons are a bit larges without this. */
-  .nav>li>a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  .navbar-form.makeright {
+
+  .form-inline.makeright {
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -327,9 +276,6 @@ footer.makefooter>ul , .makefooter>span.pullleft{
   color: #df1750;
 }
 
-.navbar-form.makeright {
-  border:none;
-}
 
 
 @media (min-width: 992px) {
@@ -345,7 +291,7 @@ footer.makefooter>ul , .makefooter>span.pullleft{
     padding-right: 5px;
   }
 
-  .navbar-form .form-control {
+  .form-inline .form-control {
   	width: 180px;
   }
 }
@@ -357,57 +303,81 @@ footer.rightalign {
 }
 
 
+@media (min-width: 768px){
+  div.navbar-collapse.blackbackground li{
+    padding-right: 15px;
+  }
 
-.navbar.navbar-default.blackbackground li a:hover,.blackbackground li a:visited{
-  color: white;
-  background-color: black;
-  font-weight: bold;
+  .blackbackground li a:hover,.blackbackground li a:visited{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-}
+  .blackbackground li a:link,.blackbackground li a:focus{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+  }
 
-.navbar.navbar-default.blackbackground li a.on:link,.navbar.navbar-default.blackbackground li a.on:visited{
-	color: white;
-  background-color: black;
-  font-weight: bold;
+  .blackbackground li.on a:link,.blackbackground li.on a:visited{
+  	color: white;
+    background-color: black;
+    font-weight: bold;
+  }
 }
 
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .navbar-form .form-control {
+  .form-inline .form-control {
   	width: 250px;
   }
+
 }
 
 
 
 /* Make footers awesome */
-
 @media (max-width: 767px){
-  .makefooter{
-    margin: 0 15px;
+  footer.makefooter{
+    margin-left:15px;
+    margin-right:15px;
     text-align: center;
   }
 }
 
 @media (min-width: 768px) {
-  .makefooter{
+  footer.makefooter{
     width: 750px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
+/*
   footer{
     padding-left: 0;
     padding-right: 0;
   }
+*/
 }
 @media (min-width: 992px) {
-  .makefooter{
+  footer.makefooter{
     width: 970px;
+  }
+
+  div.navbar-collapse.blackbackground li{
+    padding-right: 20px;
   }
 }
 @media (min-width: 1200px) {
-  .makefooter {
+  footer.makefooter {
     width: 1170px;
+  }
+
+
+  div.navbar-collapse.blackbackground li{
+    padding-right: 30px;
   }
 }
 
@@ -431,4 +401,47 @@ li{
 footer.makefooter>ul{
   margin-bottom: 0;
   padding-left: 0;
+}
+
+div.shadowandoverlap a:link,div.shadowandoverlap a:focus,div.shadowandoverlap a:visited,div.shadowandoverlap a:hover{
+  background-color:#bf0c3b;
+  padding: 0px 8px;
+  border-radius: 0;
+  color: white;
+  border: 0px;
+  text-decoration: none;
+}
+
+.formore{
+  text-align: right;
+}
+
+nav.navbar{
+  background-color:white; 
+}
+
+
+.nopadding-left{
+  padding-left:0;
+}
+
+.paddingtop-bottommargin{
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.blackbackground{
+  padding-left:0;
+  padding-right:0;
+}
+
+.blackbackground .container{
+  padding-left:0;
+  padding-right:0;
+}
+
+@media (min-width: 768px){
+  .nopadding-left{
+    padding-left:15px;
+  }
 }

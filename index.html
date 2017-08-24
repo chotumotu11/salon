@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-default nopadding">
+      <nav class="navbar navbar-default paddingtop-bottommargin">
         <div class="container">
                <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -23,33 +23,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#"><div class="navbar-brand"><span class="pinktext">Beauty Salon</span></div></a>
-          </div>
-               <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav nav-pills nav-stacked visible-xs-block">
-               <li role="presentation" class="on"><a  href="#">Home</a></li>
-               <li role="presentation"><a href="#">About Us</a></li>
-               <li role="presentation"><a href="#">Our Clients</a></li>
-               <li role="presentation"><a href="#">Packages</a></li>
-               <li role="presentation"><a href="#">Contact</a></li>
-               <li role="presentation"><a href="#">Courses</a></li>
-            </ul>
-            <form class="navbar-form makeright hidden-xs">
-               <div class="form-group">
-                  <input type="text" class="makeinline form-control" placeholder="Search">
-                  <button type="submit" class="btn btn-default">Go</button>
-               </div>
-            </form>
-         </div>
-               <!-- /.navbar-collapse -->
-       </div>
+            <a href="#" class="navbar-brand">Beauty Salon</a>
+          </div><!-- /.navbar-collapse -->
+          <form class="form-inline makeright hidden-xs">
+            <input class="form-control makeinline mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+          </form>
+        </div>
             <!-- /.container-fluid-->
       </nav>
-      <nav class="navbar navbar-default blackbackground hidden-xs">
+      <div class="collapse navbar-collapse blackbackground" id="bs-example-navbar-collapse-1">
         <div class="container">
-          <ul class="nav nav-pills">
-            <li role="presentation"><a class="on" href="#">Home</a></li>
+          <ul class="nopadding-left">
+            <li role="presentation" class="on"><a href="#">Home</a></li>
             <li role="presentation"><a href="#">About Us</a></li>
             <li role="presentation"><a href="#">Our Clients</a></li>
             <li role="presentation"><a href="#">Packages</a></li>
@@ -57,79 +43,62 @@
             <li role="presentation"><a href="#">Courses</a></li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <main>
-      <form class="navbar-form makeright visible-xs-block">
-         <div class="form-group">
-            <input type="text" class="makeinline form-control" placeholder="Search">
-            <button type="submit" class="btn btn-default">Go</button>
-         </div>
+      </div>
+      <form class="form-inline makeright visible-xs-block">
+        <input class="form-control makeinline mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
       </form>
-      <img class="fullwidth" src="Assets/Slide.png" alt="Slider" />
+    </header>
+    <img class="fullwidth" src="Assets/Slide.png" alt="Slider" />
+    <main>
       <div class="container">
         <div class="row">
           <section class="col-sm-4">
-            <div class="shadowandoverlap">
-              <header>
-                <h3 class="pinktext">Welcome</h3>
-              </header>
+            <div class="shadowandoverlap clearfix">
+              <h3 class="pinktext">Welcome</h3>
               <img class="fullwidth" src="Assets/Welcome.jpg" alt="Welcome Image" >
               <p class="marginforsection">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed faucibus massa, nec porta massa. Donec porttitor ex dolor, quis mollis mi luctus et. Etiam consectetur nisl eu
                 convallis pulvinar. Phasellus venenatis eu tellus eu placerat. Aliquam.
               </p>
-                    <!--The right align class aligns the contents to the right -->
-              <footer class="rightalign">
-                <button type="submit" class="btn btn-default">More</button>
-              </footer>
+              <a class="pull-right" href="#">More</a>
             </div>
           </section>
           <section class="col-sm-4">
-            <div class="shadowandoverlap">
-              <header>
-                <h3 class="pinktext">About us</h3>
-              </header>
+            <div class="shadowandoverlap clearfix">
+              <h3 class="pinktext">About us</h3>
               <img class="fullwidth" src="Assets/About_us.jpg" alt="About US Image">
               <p class="marginforsection">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed faucibus massa, nec porta massa. Donec porttitor ex dolor, quis mollis mi luctus et. Etiam consectetur nisl eu convallis pulvinar. Phasellus venenatis eu tellus eu placerat. Aliquam.
               </p>
-              <footer class="rightalign">
-                <button type="submit" class="btn btn-default">More</button>
-              </footer>
+              <a class="pull-right" href="#">More</a>
             </div>
           </section>
           <section class="col-sm-4" >
-            <div class="shadowandoverlap">
-              <header>
-                <h3 class="pinktext">Services</h3>
-              </header>
+            <div class="shadowandoverlap clearfix">
+              <h3 class="pinktext">Services</h3>
               <img class="fullwidth" src="Assets/Services.jpg" alt="Services Image" >
               <p class="marginforsection">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed faucibus massa, nec porta massa. Donec porttitor ex dolor, quis mollis mi luctus et. Etiam consectetur nisl eu convallis
                 pulvinar. Phasellus venenatis eu tellus eu placerat. Aliquam.
               </p>
-              <footer class="rightalign">
-                <button type="submit" class="btn btn-default">More</button>
-              </footer>
+              <a class="pull-right" href="#">More</a>
             </div>
           </section>
         </div> <!-- End of row -->
-        <section>
+        <div class="specialspaservices">
           <h3 class="spaheader">Special Spa Services</h3>
-          <img class="pullleft" src="Assets/Special_Service_image.png" alt="rocks">
-          <div class="spacewithrock">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero tincidunt risus volutpat tincidunt vitae sed nibh. Sed dignissim tortor ac quam bibendum, in pellentesque neque lobortis.
-            </p>
-            <p>
-              Vestibulum sed leo velit. Etiam ultricies ex purus, at finibus tortor ultrices a. Proin vel quam fermentum, volutpat quam porttitor, malesuada quam. Sed dignissim sem non eros pharetra, vel maximus tortor finibus. Ut dapibus ullamcorper augue, a feugiat dui maximus tincidunt. In vel sapien dui. Nulla vitae aliquam metus. Ut suscipit justo augue, sit amet ultrices massa tristique in
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero tincidunt risus volutpat tincidunt vitae sed nibh. Sed dignissim tortor ac quam bibendum, in pellentesque nequelobortis.
-            </p>
-          </div>
-        </section>
+          <img class="float-sm-left" src="Assets/Special_Service_image.png" alt="rocks">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero tincidunt risus volutpat tincidunt vitae sed nibh. Sed dignissim tortor ac quam bibendum, in pellentesque neque lobortis.
+          </p>
+          <p>
+            Vestibulum sed leo velit. Etiam ultricies ex purus, at finibus tortor ultrices a. Proin vel quam fermentum, volutpat quam porttitor, malesuada quam. Sed dignissim sem non eros pharetra, vel maximus tortor finibus. Ut dapibus ullamcorper augue, a feugiat dui maximus tincidunt. In vel sapien dui. Nulla vitae aliquam metus. Ut suscipit justo augue, sit amet ultrices massa tristique in
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non libero tincidunt risus volutpat tincidunt vitae sed nibh. Sed dignissim tortor ac quam bibendum, in pellentesque nequelobortis.
+          </p>
+        </div>
       </div>
         <!-- End of main container. -->
       <footer class="makefooter">
@@ -141,7 +110,7 @@
           <li><a href="#">Contact</a></li>
           <li><a href="#">Courses</a></li>
         </ul>
-        <span class="pullleft">
+        <span class="float-sm-left">
           &copy;Copyright 2010-2016, Beauty Salon. All rights reserved.
         </span>
       </footer>
